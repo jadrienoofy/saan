@@ -22,8 +22,6 @@
     letter-spacing: 6px;
     color: #F1FAEE;
 }
-.navright {
-}
 .navright ul {
     font-size: 25px;
     text-transform: capitalize;
@@ -415,6 +413,7 @@ button {
         border-radius: 0;
         width: 100%;
         height: 500px;
+        margin-bottom: -30px;
     }
 
     .card img {
