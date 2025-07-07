@@ -329,6 +329,7 @@ button {
         position: relative;
         position: sticky;
         top: 0;
+        height: 60px;
         z-index: 999;
     }
 
