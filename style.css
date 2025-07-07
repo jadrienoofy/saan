@@ -317,7 +317,7 @@ button {
 .navright.mobile-visible {
     display: flex !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     html, body {
         overflow-x: hidden;
         width: 100%;
@@ -414,7 +414,7 @@ button {
         border-radius: 0;
         width: 100%;
         height: 500px;
-        margin-bottom: -30px;
+        margin-bottom: -20px;
     }
 
     .card img {
