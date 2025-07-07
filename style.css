@@ -309,6 +309,12 @@ button {
 }
 .hamburger {
     display: none;
+    outline: none;
+    background: none;
+    border: none;
+}
+.hamburger:focus {
+    outline: none;
 }
 .navright.mobile-visible {
     display: flex !important;
