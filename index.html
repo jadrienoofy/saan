@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="index.js"></script>
+    <title>Saan?</title>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navleft">
+        <h1>Saan?</h1>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="navright" id="mobileMenu">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">explore spots</a></li>
+            <li class="dropdown">
+                <a href="#">categories</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Food Trips</a></li>
+                    <li><a href="#">Hangout Places</a></li>
+                    <li><a href="#">Nature Parks</a></li>
+                    <li><a href="#">Museums</a></li>
+                    <li><a href="#">Nightlife</a></li>
+                </ul>
+            </li>
+            <li><a href="#">itineraries</a></li>
+            <li><a href="#">map</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </div>
+</nav>
+    <section class="hero">
+        <h1>Discover Metro Manila</h1>
+        <p>Find food trips, hangouts, and hidden gems around the city.</p>
+        <a href="#" class="expbtn">Explore Now</a>
+    </section>
+    <section class="spots">
+        <h1>Featured Spots!</h1>
+        <div class="cardcon">
+            <div class="card">
+                <img src="images/intra.jpg" alt="Intramuros">
+                <h3>Intramuros (Manila)</h3>
+                <p>Intramuros, "The Walled City," is the oldest district in Manila. 
+                    This is what remains of the fortified city, which was the seat of 
+                    power during Spanish Colonial times (1521-1898).</p>
+            </div>
+            <div class="card">
+                <img src="images/luneta.jpg" alt="Luneta Park">
+                <h3>Rizal Park (Manila)</h3>
+                <p>Historic park featuring a national hero's monument, 
+                    tranquil gardens, and local culinary treats. 
+                    Enjoy cultural exhibits and evening fountain displays in 
+                    this serene urban retreat.</p>
+            </div>
+            <div class="card">
+                <img src="images/ocean.jpg" alt="Manila Ocean Park">
+                <h3>Manila Ocean Park (Manila)</h3>
+                <p>Interactive marine adventure with underwater tunnel and 
+                    educational exhibits on marine conservation. 
+                    Highlights include penguin encounters and sea lion shows, 
+                    set in a lively atmosphere.</p>
+            </div>
+            <div class="card">
+                <img src="images/venice.jpg" alt="Venice Grand Canal Mall">
+                <h3>Venice Grand Canal Mall (Taguig, City)</h3>
+                <p>Venetian-themed mall with gondola rides along a scenic canal, 
+                    surrounded by a blend of international dining and shopping 
+                    outlets, ideal for romantic strolls and leisure.</p>
+            </div>
+        </div>
+        <div class="cardcon">
+            <div class="card">
+                <img src="images/bgc.jpg" alt="Bonifacio Global City">
+                <h3>Bonifacio Global City (Taguig, City)</h3>
+                <p>Bonifacio Global City is the most posh suburb in Manila.</p>
+            </div>
+            <div class="card">
+                <img src="images/art.jpg" alt="Art in Island">
+                <h3>Art in Island (Quezon, City)</h3>
+                <p>Prepare for magnificent sights of art and light crafted with the latest media 
+                    technology, and a fully immersive experience that transcends time and space. 
+                    Located in Quezon City, Art in Island</p>
+            </div>
+            <div class="card">
+                <img src="images/nat.jpg" alt="National Museum">
+                <h3>National Museum (Manila)</h3>
+                <p>This grand exhibit house features the country's most historic works of culture and national heritage, 
+                    including the paintings of heralded Philippine artist Felix 
+                    Resurreccion Hidalgo.</p>
+            </div>
+            <div class="card">
+                <img src="images/qc.jpg" alt="Quezon Memorial Circle">
+                <h3>Quezon Memorial Circle (Quezon, City)</h3>
+                <p>The Quezon Memorial Circle grounds were drawn up by Arch. Francisco Mañosa and Associates. Some of the attractions are the Peace Bell, 
+                    the Circle of Fun, the Children’s Playground, the 
+                    Quezon Heritage House and many more.</p>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <h1>Never Miss a Spot!</h1>
+        <p>Subscribe to our newsletter for weekly hidden gems and updates.</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <section class="reviews">
+    <h1>What People are Saying</h1>
+    <div class="review-container">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Sobrang helpful ng Saan? website! Napadali ang paghanap namin ng date spot."</p>
+            <h4>- Mika, Quezon, City</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p class="review-text">"Thanks to Saan?, nakita namin yung mga hidden gems na hindi namin alam dati!"</p>
+            <h4>- John Doe, Pasay, City</h4>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">“Ang ganda ng pagkakagawa ng site na ‘to. Parang bawat spot may sariling kwento parang may naaalala akong kasama ko dati habang binabasa ko ‘yung descriptions. Hindi ko alam kung trip lang ‘to… o trip down memory lane na rin.”</p>
+            <h4>- Angel, Quezon, City</h4>
+        </div>
+    </div>
+</section>
+    <section class="saan-tayo">
+        <h1>Saan nga ba tayo?</h1>
+        <p><span class="q">"</span>Sometimes it’s not about the destination but about who you hoped would still be walking beside you by the time you get there.</p>
+        <p>Find the places. Maybe you’ll find the answer.<span class="q">"</span></p>
+    </section>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>Saan?</h3>
+            <p>More than a guide, it's a memory map made for the ones who search for meaning in every street, every stop, and every silent ride home.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Connect</h4>
+            <p>Email: saan.manila@gmail.com</p>
+            <p>IG: <a href="#">@saan.manila</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Saan? Website by Jadrien. All memories preserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

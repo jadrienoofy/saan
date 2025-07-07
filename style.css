@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding: 20px;
+    background-color: #1D3557;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navleft h1{
+    font-size: 40px;
+    font-weight: 540;
+    letter-spacing: 6px;
+    color: #F1FAEE;
+}
+.navright {
+}
+.navright ul {
+    font-size: 25px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navright li {
+    list-style: none;
+    margin-left: 40px;
+}
+.navright a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.navright a:hover {
+    color: #A8DADC;
+    text-shadow: 0 0 8px #A8DADC,
+                 0 0 16px #A8DADC,
+                 0 0 24px #A8DADC;
+}
+.hero {
+    background: url('images/qcmc.jpg') no-repeat center center/cover;
+    height: 70vh;
+    align-content: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: #3662a0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.hero p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #e6e6e6;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.expbtn {
+    background-color: #1D3557;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 13px;
+    transition: background-color 0.3s ease;
+}
+.expbtn:hover {
+    background-color: #122336;
+}
+.dropdown-content {
+    display: none !important;
+    position: absolute;
+    background-color: #1D3557;
+    top: 72px;
+    right: 475px;
+    min-width: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.dropdown-content li a {
+    padding: 10px 15px;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block !important;
+}
+.dropdown > a::after {
+    content: " ▼";
+    font-size: 0.7em;
+}
+.spots h1 {
+    font-size: 38px;
+    color: #1D3557;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.cardcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+.card {
+    background-color: #477eca;
+    width: 300px;
+    height: 400px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    height: 200px;
+    margin-bottom: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 300px;
+    object-fit: cover;
+}
+.card h3 {
+    margin-left: 10px;
+}
+.card p {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.news {
+    height: 180px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.news h1 {
+    font-size: 35px;
+    font-weight: 605;
+    color: #1D3557;
+    letter-spacing: 3px;
+}
+.news p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+form input {
+    padding: 9px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+button {
+    padding: 12px;
+    border: none;
+    background-color: #3662a0;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 450;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #284977;
+}
+form input,
+button {
+    display: flex;
+}
+.reviews {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 36px;
+    color: #1D3557;
+    margin-bottom: 40px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.review-card {
+    width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review-card h4 {
+    font-size: 16px;
+    color: #888;
+}
+
+.stars {
+    font-size: 20px;
+    color: #FFD700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.saan-tayo {
+    background: linear-gradient(to right, #fdfbfb, #ebedee); /* soft cloudy feel */
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+}
+
+.saan-tayo h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #1D3557;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.saan-tayo p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 10px auto;
+    max-width: 700px;
+    color: #555;
+    font-style: italic;
+}
+.q {
+    font-size: 30px;
+    color: #074294;
+    font-weight: 600;
+}
+.footer {
+    background-color: #1D3557;
+    color: #f1f1f1;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 300px;
+}
+.footer-links ul li {
+    list-style: none;
+}
+.footer h3, .footer h4 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer p, .footer a {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+.hamburger {
+    display: none;
+}
+.navright.mobile-visible {
+    display: flex !important;
+}
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .navleft {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navleft h1 {
+        font-size: 32px;
+        padding-left: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    .navright {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: #1D3557;
+        z-index: 1000;
+    }
+
+    .navright ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .navright li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .dropdown {
+        display: block;
+        width: 70%;
+    }
+    .dropdown-content {
+        display: block !important;
+        position: static;
+        background-color: #16314b;
+        width: 100%;
+        border-radius: 0;
+    }
+    .dropdown > a::after {
+    content: none;
+  }
+
+    .dropdown-content li a {
+        padding: 10px 15px;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+    .spots h1 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .cardcon {
+        flex-direction: column;
+    }
+
+    .card {
+        border-radius: 0;
+        width: 100%;
+        height: 500px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 250px;
+        border-radius: 0;
+    }
+
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        flex: 1 1 100%;
+    }
+
+    .news {
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    .news h1 {
+        font-size: 28px;
+    }
+
+    .news p {
+        font-size: 16px;
+    }
+    .reviews h1 {
+        font-size: 22px;
+    }
+    form input {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 90%;
+    }
+    .saan-tayo h1 {
+        font-size: 28px;
+    }
+    .saan-tayo p {
+        padding: 0 10px;
+    }
+    .navright a:hover {
+        color: inherit;
+        text-shadow: none;
+    }
+    .expbtn:hover,
+    button:hover {
+        background-color: #1D3557;
+    }
+    .card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    .review-card:hover {
+        transform: none;
+    }
+    .footer a:hover {
+        text-decoration: none;
+    }
+}
